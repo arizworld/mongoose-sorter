@@ -48,12 +48,12 @@ if any other than the mentioned keys is sent in the `sortQuery` that will be ign
     import { SortObject } from "mongoose-sorter";
 
     const sortObject: SortObject = {
-    name: { type: string },
-    score: { type: number },
-    sectionLength: { type: array, databaseKey: 'section' },
-    date: { type: Date, databaseKey: 'updated_at', nullReplacementValue: 'created_at',nullReplacementValue: new Date()  }
+        name: { type: 'string' },
+        score: { type: 'number' },
+        sectionLength: { type: 'array', databaseKey: 'section' },
+        date: { type: 'date', databaseKey: 'updated_at', nullReplacementKey: 'created_at', nullReplacementValue: new Date() }
     }
-
+    
 ```
 
 
